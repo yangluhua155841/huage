@@ -79,7 +79,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-6" v-for="(item,index) in shoplist" :key="index">
-					<img :src="item.url" class="img-thumbnail" align="" />
+					<img :src="item.url" class="img-thumbnail" align="" @click="tip" />
 					<p class="text-center text-primary">{{item.name}}</p>
 					<p class="text-center text-danger"> &#xA5{{item.price}}</p>
 				</div>

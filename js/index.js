@@ -1,7 +1,7 @@
 new Vue({
 	el: "#vue",
 	data: {
-		inputName: "输入商品名...",
+		inputName: "输入商品名... ",
 		num: "",
 		items: [
 			{
@@ -133,9 +133,12 @@ new Vue({
 		this.num = list.length;
 	},
 	methods: {
-		active: function (e) {
+		tip:function(e){
 			console.log(e)
-		},
+			if(confirm("您确定购买吗？")==true){
+				alert("已售完")
+			}
+		}
 
 
 	}
